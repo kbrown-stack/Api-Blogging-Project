@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #bfdbfe, #c084fc);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  
+  .form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h1 {
+    color: #6a0dad;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    background-color: #f3e5f5;
+    border-color: #6a0dad;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4a007d; 
+    background-color: #f8f0fa;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #4a007d;
+  }
+  
+  p {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  a {
+    color: #6a0dad;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Base styles are already defined. Adding responsive design below */
+
+/* Small Devices (Mobile Phones, max width: 600px) */
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .form-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+
+@media only screen and (min-width: 901px) {
+  .form-container {
+    max-width: 400px;
+    padding: 25px;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+  

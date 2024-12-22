@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/client/public/css/home.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Welcome Fast Blogging API</h1>
+      <p>Explore, Create, Connect.</p>
+      <div class="auth-buttons">
+        <a href="/api/auth/register" class="btn">New, Sign Up and Get Started</a>
+        <a href="/api/auth/login" class="btn btn-secondary">SignIn</a>
+      </div>
+    </header>
+
+    <!-- Published Blogs Section -->
+    <main class="main">
+      <h2>Published Blogs</h2>
+      <% if (blogs && blogs.length > 0) { %>
+        <ul class="blog-list">
+          <% blogs.forEach(blog => { %>
+            <li class="blog-item">
+              <h3><a href="/api/blogs/<%= blog._id %>"><%= blog.title %></a></h3>
+              <p><%= blog.description %></p>
+              <div class="blog-meta">
+                <span>Author: <%= blog.author.first_name %> <%= blog.author.last_name %></span>
+                <span>Reading Time: <%= blog.reading_time %></span>
+                <span>Read Count: <%= blog.read_count %></span>
+              </div>
+            </li>
+          <% }); %>
+        </ul>
+      <% } else { %>
+        <p>No published blogs available at the moment.</p>
+      <% } %>
+    </main>
+  </div>
+</body>
+</html>
