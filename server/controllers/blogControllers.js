@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const Blog = require("./../models/blogModel");
-const calculateReadingTime = require("./../utils/calculatedReadingTime");
+const Blog = require("../models/blogModel");
+const calculateReadingTime = require("../utils/calculatedReadingTime");
 
 // Create a new blog
 const createBlog = async (userId, blogData) => {

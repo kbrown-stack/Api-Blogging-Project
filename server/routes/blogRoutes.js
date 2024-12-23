@@ -7,9 +7,13 @@ const {
   updateBlog,
   deleteBlog,
   updateBlogState,
-} = require("./../controllers/blogControllers");
-const authMiddleware = require("./../middlewares/authMiddlewares");
-const paginationMiddleware = require("./../middlewares/paginationMiddleware");
+} = require("../controllers/blogControllers");
+const authMiddleware = require("../middlewares/authMiddlewares");
+// const authMiddlewares = require('../middlewares/authMiddlewares');
+
+const paginationMiddleware = require("../middlewares/paginationMiddlewares");
+
+
 
 const router = express.Router();
 

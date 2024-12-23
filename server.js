@@ -1,5 +1,5 @@
 const app = require('./app');
-const { connectDB } = require('../Blogging_API/server/configuration/db'); 
+const { connectDB } = require('../Blogging_Api Project/server/configuration/db'); 
 const dotenv = require('dotenv');
 
 

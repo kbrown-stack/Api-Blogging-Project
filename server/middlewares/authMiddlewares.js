@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("./../models/userModel");
+const User = require("../models/userModel");
 
 const publicRoutes = ["/", "/api/auth/login", "/api/auth/register"];
 
